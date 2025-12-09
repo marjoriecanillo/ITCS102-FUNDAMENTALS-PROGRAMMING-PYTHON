@@ -20,21 +20,3 @@ print("The qoutient of",n1,"and",n2,"is",q)
 print(n1, "exponent by",n2,"is",n1**n2)
 print("The remainder of",n1,"and",n2,"is",n1 % n2)
 print("The floor division of",n1,"and",n2,"is",n1//n2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8
