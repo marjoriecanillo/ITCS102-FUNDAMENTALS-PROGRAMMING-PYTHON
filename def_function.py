@@ -106,7 +106,7 @@ def activity11():
 
 def activity12():
     for ikot in range(1, 11, 1):
-	print('hello world')
+	    print('hello world')
 
 def activity13():
     num = 0
@@ -118,7 +118,7 @@ def activity13():
 
 def activity14():
     for y in range(20, 0, -1):
-	print(y)
+	    print(y)
 
 def activity15():
     firstname = 'marjorie'
@@ -128,48 +128,48 @@ def activity15():
 
 def activity16():
     for y in range(1,11,1):
-	print(y,end="")
+	    print(y,end="")
 
 def activity17():
     for y in range(1,11,1):
-	for x in range(1,11,1):
-	 print(x,end=" ")
-	print()
+	    for x in range(1,11,1):
+	        print(x,end=" ")
+	    print()
 
 def activity18():
     for y in range(1,11,1):
-	for x in range(1, y, 1):
-	 print(x, end=' ')
-	print()
+	    for x in range(1, y, 1):
+	        print(x, end=' ')
+	    print()
 
 def activity19():
     for y in range(1,11,1):
-	for x in range(1, y, 1):
-	 print("*", end=' ')
-	print()
+	    for x in range(1, y, 1):
+	        print("*", end=' ')
+	    print()
 
 def activity20():
     for y in range(1,11,1):
 	#for x in range(1, y, 1):
 	 #print(" ", end=' ')
-	for i in range(10, y, -1):
-	 print("*",end= " ")
-	print()
+	    for i in range(10, y, -1):
+	        print("*",end= " ")
+	    print()
 
 def activity21():
     ems = True
 
     while ems == True:
-	ans = input("Do you wish to stop washing (yes/no)--> ")
+        ans = input("Do you wish to stop washing (yes/no)--> ")
 
-	if ans == "no":
-	 print("continue the cycle")
-	 continue
-	elif ans == "yes":
-	 print("cycle stops")
-	 break
-	else:
-	 print("invalid choice")
+        if ans == "no":
+            print("continue the cycle")
+            continue
+        elif ans == "yes":
+            print("cycle stops")
+            break
+        else:
+            print("invalid choice")
 
 def activity22():
     import random
@@ -179,17 +179,17 @@ def activity22():
     cont = True
 
     while cont == True:
-    guess = int(input("Guess a number between 1 and 20: "))
-    trial += 1
-    if guess < random_number:
-        print("Too low! Try again.")
-        continue
-    elif guess > random_number:
-        print("Too high! Try again.")
-        continue
-    elif guess == random_number:
-        print(f"Congratulations! You've guessed the number {random_number} in {trial} tries.")
-        break
+        guess = int(input("Guess a number between 1 and 20: "))
+        trial += 1
+        if guess < random_number:
+            print("Too low! Try again.")
+            continue
+        elif guess > random_number:
+            print("Too high! Try again.")
+            continue
+        elif guess == random_number:
+            print(f"Congratulations! You've guessed the number {random_number} in {trial} tries.")
+            break
 
 def activity23():
     colors = ['green', 'blue', 'yellow', 'red', 'orange', 'indigo']
@@ -239,54 +239,7 @@ def activity24_1():
     greeter("mando")
     summation(50)
     summation(100)
-
-def activity25():
-    from activity25_1 import *
-    print("compiler")
-
-    choice = True
-    while choice == True:
-        choose = input("Which activity do you want to run? \na - activity1\nb - activity2\nc - code_challenge1\nd - code_challenge2\ne - exit\nanswer: ")
-
-    if choose == 'e':
-        print("Exiting the program. Goodbye!")
-        break
-    elif choose == 'a':
-        activity1()
-    elif choose == 'b': 
-        activity2()
-    elif choose == 'c':
-        code_challenge1()
-    elif choose == 'd':
-        code_challenge2()
-
-def activity25_1.py():
-    def activity1():
-    print("Hello World!")
-
-    def activity2():
-    answer=input("who is the greatest singer? ")
-    print("Is that even a question?? You know there's only one right answer, and it's", answer)
-    def code_challenge1():
-    name=input("Type your name: ")
-    print("\t\t\t*\n\n\t\t*\t\t*\n\n\t*\t\t\t\t*\n\n*\t\t  hi, ", name, "\t\t*\n\n\t*\t\t\t\t*\n\n\t\t*\t\t*\n\n\t\t\t*")
-    def code_challenge2():
-    x = eval(input("Enter the amount you want to deposit: "))
-    print("\nHere is a detailed breakdown in PH currency:")
-    print("\n1000 --" ,x//1000)
-    print("500  --" ,((x%1000)//500))
-    print("200  --" ,(((x%1000)%500)//200))
-    print("100  --" ,((((x%1000)%500)%200)//100))
-    print("50   --" ,((((x%1000)%500)%200)%100)//50)
-    print("20   --" ,(((((x%1000)%500)%200)%100)%50)//20)
-    print("10   --" ,((((((x%1000)%500)%200)%100)%50)%20)//10)
-    print("5    --" ,(((((((x%1000)%500)%200)%100)%50)%20)%10)//5)
-    print("1    --" ,((((((((x%1000)%500)%200)%100)%50)%20)%10)%5)//1)
-    print("Total amount:" ,x)
-
-    #call your function here
-    activity2()
-            
+        
 def activity26():
     genre = ['romcom', 'drama', 'horror', 'comedy', 'romance', 'action']
 
@@ -304,25 +257,25 @@ def activity27():
             print(f"Code {x} Title -- {n}")
 
     while cont == True:
-    keys = input("Input keys for your movie: ")
-    value = input("Enter movie title: ")
+        keys = input("Input keys for your movie: ")
+        value = input("Enter movie title: ")
 
-    empty_dictionary[keys] = value
+        empty_dictionary[keys] = value
 
-    choice = input("Do you like adding more \ny-Yes\nn-No\np-print\n --> ").lower()
+        choice = input("Do you like adding more \ny-Yes\nn-No\np-print\n --> ").lower()
 
-    if choice == 'y':
-        print("continuing...")
-        continue
-    elif choice =='n':
-        print("Stop the Program")
-        continue
-    elif choice == 'p':
-        print_movie()
-        continue
-    else:
-        print("invalid choice")
-        break
+        if choice == 'y':
+            print("continuing...")
+            continue
+        elif choice =='n':
+            print("Stop the Program")
+            continue
+        elif choice == 'p':
+            print_movie()
+            continue
+        else:
+            print("invalid choice")
+            break
 
 def activity28():
     #Step 1 
@@ -523,38 +476,38 @@ def code_challenge5():
 
     if genre == "action":
         if length == "short" and decade == "2010s":
-        print("Recommendation: Samurai Girls")
+         print("Recommendation: Samurai Girls")
         elif length == "short" and decade == "2020s":
-        print("Recommendation: Tower of God")
+         print("Recommendation: Tower of God")
         elif length == "medium" and decade == "2010s":
-        print("Recommendation: Katanagatari")
+         print("Recommendation: Katanagatari")
         elif length == "medium" and decade == "2020s":
-        print("Recommendation: Decadence")
+         print("Recommendation: Decadence")
         elif length == "long" and decade == "2010s":
-        print("Recommendation: Hakuoki")
+         print("Recommendation: Hakuoki")
         elif length == "long" and decade == "2020s":
-        print("Recommendation: Jujutsu Kaisen")
+         print("Recommendation: Jujutsu Kaisen")
         else:
-        print("Sorry, no action manga matches your selection.")
+         print("Sorry, no action manga matches your selection.")
 
     elif genre == "romance":
         if length == "short" and decade == "2010s":
-        print("Recommendation: Kimi ni Todoke")
+         print("Recommendation: Kimi ni Todoke")
         elif length == "short" and decade == "2020s":
-        print("Recommendation: Kubo Won't Let Me Be Invisible")
+         print("Recommendation: Kubo Won't Let Me Be Invisible")
         elif length == "medium" and decade == "2010s":
-        print("Recommendation: Maid Sama!")
+         print("Recommendation: Maid Sama!")
         elif length == "medium" and decade == "2020s":
-        print("Recommendation: My Dress-Up Darling")
+         print("Recommendation: My Dress-Up Darling")
         elif length == "long" and decade == "2010s":
-        print("Recommendation: Angel Beats!")
+         print("Recommendation: Angel Beats!")
         elif length == "long" and decade == "2020s":
-        print("Recommendation: The Quintessential Quintuplets")
+         print("Recommendation: The Quintessential Quintuplets")
         else:
-        print("Sorry, no romance manga matches your selection.")
+         print("Sorry, no romance manga matches your selection.")
 
     else:
-        print("Invalid genre. Please choose from 'action', or 'romance'.")
+         print("Invalid genre. Please choose from 'action', or 'romance'.")
 
 def code_challenge6():
     num = eval(input("Input a number --> "))
@@ -570,7 +523,7 @@ def code_challenge7():
     for y in range(1, 11, 1):
         number = eval(input("Input number: "))
         if number % 2:
-        num += number
+            num += number
     print("The sum of all the ODD number is ",num)
 
 def code_challenge8():
@@ -593,46 +546,46 @@ def code_challenge9():
 def code_challenge10():
    #print("\t\t *",end=" ")
     for y in range(1, 11, 1):
-	for x in range(10, y, -1):
-	  print(" ",end =' ')
-	for i in range(1, y, 1):
-	  print("*", end =' ')
-	for z in range(1, y, 1):
-	 print("*", end =' ')
-	print()
+	    for x in range(10, y, -1):
+	        print(" ",end =' ')
+	    for i in range(1, y, 1):
+	        print("*", end =' ')
+	    for z in range(1, y, 1):
+	        print("*", end =' ')
+	    print()
 
 def code_challenge11():
     print("\t\t   *")
     for s in range(1,11,1):
-    for z in range(10,s,-1):
-        print(" ", end=" ")
-    for r in range(0,s,1):
-        print("*", end=' ')
-    for n in range(0,s,1):
-        print("*", end=" ")
-    print()
+        for z in range(10,s,-1):
+            print(" ", end=" ")
+        for r in range(0,s,1):
+            print("*", end=' ')
+        for n in range(0,s,1):
+            print("*", end=" ")
+        print()
     for m in range(1,10,1):
-    for h in range(0,m,1):
-        print(" ", end=" ")
-    for b in range(10,m,-1):
-        print("*", end=' ')
-    for w in range(10,m,-1):
-        print("*", end=' ')
-    print()
+        for h in range(0,m,1):
+            print(" ", end=" ")
+        for b in range(10,m,-1):
+            print("*", end=' ')
+        for w in range(10,m,-1):
+            print("*", end=' ')
+        print()
     print("\t\t   *")
 
 def code_challenge12():
     for me in range(1,7,1):
-	for us in range(7,me,-1):
-	 print(" ", end=' ')
-	for you in range(me,0,-1):
-	 print(you, end=' ')
-	for them in range(2,me+1):
-	 print(them, end=' ')
-	print()
+	    for us in range(7,me,-1):
+	        print(" ", end=' ')
+	    for you in range(me,0,-1):
+	        print(you, end=' ')
+	    for them in range(2,me+1):
+	        print(them, end=' ')
+	    print()
 
 def code_challenge13():
-        print("\t\t\t               *")
+    print("\t\t\t               *")
     for z in range(1,2,1):
         for d in range(20,z,-1):
             print(" ", end=" ")
@@ -686,31 +639,31 @@ def code_challenge14():
         you = eval(input("Please input a number --> "))
 
         if you % 2 == 1:
-        print("ODD number detected")
-        odd += str(you) + ","
-        sum += you
-        continue
+            print("ODD number detected")
+            odd += str(you) + ","
+            sum += you
+            continue
         elif you == 0:
-        print("Loop Terminated")
-        break
+            print("Loop Terminated")
+            break
         else:
-        if you % 2 == 0:
-        print("EVEN number, skipping... ")
-        else:
-        print("invalid number ")
-        continue
+            if you % 2 == 0:
+                print("EVEN number, skipping... ")
+            else:
+                print("invalid number ")
+            continue
 
     print(f"Hello {me}, The sum of all ODD number is {sum}")
     print(f"All the ODD numbers you input is {odd}")
 
 def code_challenge15():
-        anime_list = []
+    anime_list = []
     while True:
         anime_title = input("Enter the title of an anime (or type 'exit' to finish): ")
 
         if anime_title.lower() == 'exit':
-        print("You have exited the anime entry program.")
-        break
+            print("You have exited the anime entry program.")
+            break
 
         anime_list.append(anime_title)
         print(f"'{anime_title}' has been added to your anime list.")
