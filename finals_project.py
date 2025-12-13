@@ -1,15 +1,17 @@
 from def_function import *
 
+print("========== FINALS PROJECT ==========")
+
 print("Welcome to my Finals Project")
 
 name = input("Hello, please input your name --> ")
-print(f"Hi, {name}, Welcome to my Compiler Program")
+print(f"Hi, {name}, Welcome to my First Semester Compiler Program")
 
-isTrue = True
+cont = True
 
-while isTrue == True:
-    print("Pick a Choice: ")
-    print("1 - Activities\n2 - Code_Challenges\n0 - Stop The Program")
+while cont == True:
+    print("Select your Choice: ")
+    print("1 - Activities\n2 - Code_Challenges\n0 - Exit the Program")
     choice = input("Enter your choice: ")
 
 #Activities
@@ -164,9 +166,9 @@ while isTrue == True:
         
         elif act == "e":
             print(f"You've selected letter {act}")
-            print("Welcome to Activities 21 to 24_1")
+            print("Welcome to Activities 21 to 24")
             print("Choose between the given options: ")
-            print("21a - Activity21\n22a - Activity22\n23a - Activity23\n24a - Activity24\n24_1a - Activity24_1")
+            print("21a - Activity21\n22a - Activity22\n23a - Activity23\n24a - Activity24")
             act01 = input("Choose the following options:  ").lower()
             if act01 == "21a":
                 print(f"You've selected number {act01}")
@@ -188,20 +190,15 @@ while isTrue == True:
                 print("Welcome to my twenty-fourth python activity")
                 activity24()
                 continue
-            elif act01 == "24_1a":
-                print(f"You've selected number {act01}")
-                print("Welcome to my twenty-f0urth underscore one python activity")
-                activity25()
-                continue
             else:
                 print("Invalid input...please, try again")
                 continue
 
         elif act == "f":
             print(f"You've selected letter {act}")
-            print("Welcome to Activities 26 to 28")
+            print("Welcome to Activities 26 to 27")
             print("Choose between the given options: ")
-            print("26a - Activity26\n27a - Activity27\n28a - Activity28")
+            print("26a - Activity26\n27a - Activity27")
             act01 = input("Choose the following options:  ").lower()
             if act01 == "26a":
                 print(f"You've selected number {act01}")
@@ -212,11 +209,6 @@ while isTrue == True:
                 print(f"You've selected number {act01}")
                 print("Welcome to my twenty-seventh python activity")
                 activity27()
-                continue
-            elif act01 == "28a":
-                print(f"You've selected number {act01}")
-                print("Welcome to my twenty-eighth python activity")
-                activity28()
                 continue
             else:
                 print("Invalid input...please try again")
